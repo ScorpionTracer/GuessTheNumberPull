@@ -9,11 +9,11 @@ public class GuessTheNumber {
         int number = (int) (Math.random() * range);
         while (true) {
             System.out.println("Угадайте число от 0 до " + range);
-            int InputNumber = scanner.nextInt();
-            if (InputNumber == number) {
+            int inputNumber = scanner.nextInt();
+            if (inputNumber == number) {
                 System.out.println("Вы угадали число");
                 break;
-            } else if (InputNumber > number) {
+            } else if (inputNumber > number) {
                 System.out.println("Загаданное число меньше");
             } else {
                 System.out.println("Загаданное число больше");
