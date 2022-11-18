@@ -25,10 +25,10 @@ public class GuessTheNumberPull {
             default:
                 throw new Exception("Введите правильный уровень сложности");
         }
-        PlayLevel(range);
+        playLevel(range);
     }
 
-    private static void PlayLevel(int range) {
+    private static void playLevel(int range) {
         int number = (int) (Math.random() * range);
         while (true) {
             System.out.println("Угадайте число от 0 до " + range);
